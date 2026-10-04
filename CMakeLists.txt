@@ -7,6 +7,9 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 include(CTest)
 
+add_executable(main src/main.cpp)
+target_include_directories(main PRIVATE include)
+
 add_executable(test_linked_lists tests/test_linked_lists.cpp)
 
 target_include_directories(test_linked_lists PRIVATE include)
